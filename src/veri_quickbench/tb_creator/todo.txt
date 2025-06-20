@@ -1,0 +1,15 @@
+converter from verilog numbers (8'hxx etc) to python numbers (0x)
+
+does not handle things like this:
+input wire [7:0] red, grn, blu,
+either fix or throw a more useful error
+
+add in driver code for clocks, resets
+add in source and sinks for driving interfaces, see example folder
+add appropriate parameters into interface instantiation Ie.  m_axi = intfc.axi(TDATA,...)
+
+possibly move the interfaces into the *_ep.py files...
+
+clocks within or outside of intfc interfaces?
+
+run tests in parallel?
