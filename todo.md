@@ -1,5 +1,6 @@
 * verbosity from cli
 * test more files in source folder and in testbench folder
+* if only 1 clock in module skip association with axi,axis
 * nicer output when verilog has errors
 * when choice to not add all other files from source folder, still need to add the selected source file
 * pull corresponding comment from module parameters and print it during testfixture config.  Ie. give explanantion of of ELEMENT_SIZE_BITS
