@@ -136,12 +136,13 @@ from veri_quickbench.tb_creator import (
 from veri_quickbench.tb_endpoints import (
     AXIMaster,
     AXISlave,
-    AXIStreamFrame
+    AXIStreamFrame,
     AXIStreamSink,
     AXIStreamSource,
     send_axis,
     wait_axis,
 )
+
 
 {import_str}
 
