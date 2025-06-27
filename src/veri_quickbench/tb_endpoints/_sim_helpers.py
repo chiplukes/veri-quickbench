@@ -83,7 +83,7 @@ def send_axis(  # noqa: PLR0913
             tuser_lst = [tuser for _ in data]
         frm = AXIStreamFrame(
             elements_per_beat=source.elements_per_beat,
-            element_size_bits=source.element_size_bits * source.elements_per_beat,
+            element_size_bits=source.element_size_bits,
             repr_items=0,
             endian=endian,
         )
