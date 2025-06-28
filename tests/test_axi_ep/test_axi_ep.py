@@ -574,7 +574,9 @@ def tb(
                     break
                 yield clk.posedge
             yield clk.posedge
-            axi_m.clear()
+            yield clk.posedge
+            rd_a_actual, rd_d_actual, rd_tid_actual = axi_m.get_read_log()
+            print(f"{rd_a_actual=}, {rd_d_actual=}, {rd_tid_actual=}")
 
             # test that fill works for reads of data not contained in self.a self.d
             axi_s.fill = 0xDC
