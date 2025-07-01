@@ -1,3 +1,4 @@
+* handle case where AXI,AXIS Data/address widths are not parameters.
 * verbosity from cli
 * test more files in source folder and in testbench folder
 * if only 1 clock in module skip association with axi,axis
